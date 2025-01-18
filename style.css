@@ -1,0 +1,139 @@
+#hero{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.navi{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.lists{
+    display: flex;
+}
+.item{
+    list-style: none;
+    margin-right: 34px;
+}
+.item a{
+    text-decoration: none;
+    color: black;
+}
+
+.poppins-regular {
+    font-family: "Poppins", serif;
+    
+    font-style: normal;
+  }
+
+  .titles{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .p-title{
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+
+  .p-subtitle{
+    font-size: 1rem;
+  }
+
+  .btn{
+    padding: 10px 24px;
+    background-color: #E02C6D;
+    border: none;
+    border-radius: 40px;
+  }
+
+  .photograph{
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  .logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin-bottom: 70px;
+  }
+
+  .photos{
+    margin-right: 60px;
+  }
+ .divider{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+ }
+ .collection-title{
+    text-align: center;
+ }
+
+ .collection{
+    padding: 100px;
+ }
+ .divs{
+    background-color: #ebebeb;
+    box-shadow: 2px 2px 5px;
+    padding: 20px;
+ }
+
+ .products{
+    display: flex;
+    padding: 100px;
+ }
+ .texts{
+    padding-left: 50px;
+ }
+ .b-color{
+    background-color: #FFFFFF;
+ }
+ .legs{
+    text-align: center;
+    background-color: #0A0826;
+    color: white;
+    padding: 70px;
+ }
+
+ @media screen and (max-width:576px) {
+
+    .navi{
+        flex-direction: column;
+       
+       
+    }
+    .lists{
+        flex-direction: column;
+        margin-left: 70px;
+    }
+    .photograph{
+        flex-direction: column-reverse;
+    }
+    .logos{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .divider{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .products{
+        flex-direction: column-reverse;
+    }
+    .poto{
+        margin-bottom: 20px;
+    }
+
+    
+ }
